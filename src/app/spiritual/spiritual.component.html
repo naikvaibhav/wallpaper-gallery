@@ -7,24 +7,27 @@
     <!--iterative div starts from here creates multiple panels or card depending on the objects declared in the array allBlogs-->
     <div *ngFor="let images of spiritualImages" class="col-12 col-md-4" style="align-items: center">
 
-    <!----using bootstrap card for image arrangement in the form of thumbnails
+      <!--using bootstrap card for image arrangement in the form of thumbnails
     <div class="card-group mx-5">
     <div class="card">
   
     <a href="" data-toggle="modal" data-target="#exampleModalCenter"><img src='{{images.url}}' class="card-img-top img-fluid" alt="spiritual images" ></a>
     </div>-->
-    
-    <!--creating thumbnails using just the img-thumnail class-->
-    <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><img src='{{images.url}}' class="img-thumbnail" ></a>
 
-  
-  
+      <!--creating thumbnails using just the img-thumnail class-->
+      <a href="#" data-toggle="modal" data-target="#exampleModalCenter"><img src='{{images.url}}'
+          class="img-thumbnail"></a>
+
+
+
       <br />
     </div>
 
-</div> <!--end of iterative div-->
-<!----Modal--> 
-<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true" *ngFor="let images of spiritualImages">
+  </div>
+  <!--end of iterative div-->
+  <!--Modal-->
+  <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+    aria-hidden="true" *ngFor="let images of spiritualImages">
     <div class="modal-dialog modal-dialog-centered" role="document">
       <div class="modal-content">
         <div class="modal-header">
@@ -43,6 +46,6 @@
       </div>
     </div>
   </div>
-  
+
 
 </div>

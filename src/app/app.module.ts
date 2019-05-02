@@ -7,10 +7,10 @@ import { HomeComponent } from './home/home.component';
 
 
 //importing router module for routing the path
-import { RouterModule,Routes} from'@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { SpiritualComponent } from './spiritual/spiritual.component';
 
-import {GalleryService} from './gallery.service';
+import { GalleryService } from './gallery.service';
 import { ViewspiritualComponent } from './viewspiritual/viewspiritual.component';
 
 @NgModule({
@@ -19,17 +19,17 @@ import { ViewspiritualComponent } from './viewspiritual/viewspiritual.component'
     HomeComponent,
     SpiritualComponent,
     ViewspiritualComponent
-    
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot([
-      {path:'home', component:HomeComponent},
-      {path:'', redirectTo:'home', pathMatch:'full'},
-      {path:'spiritual', component:SpiritualComponent},
-      {path:'viewspiritual/:url', component:ViewspiritualComponent}
-     
+      { path: 'home', component: HomeComponent },
+      { path: '', redirectTo: 'home', pathMatch: 'full' },
+      { path: 'spiritual', component: SpiritualComponent },
+      { path: 'viewspiritual/:url', component: ViewspiritualComponent }
+
 
     ])
   ],
