@@ -1,0 +1,35 @@
+<br />
+<div class="container"><a [routerLink]="['/home']"><button type="button" class="btn btn-dark"
+      style="font-family:'Righteous', cursive;">Back</button></a></div>
+<br />
+<div class="container" style="text-align:center">
+  <div class="row" style="text-align:center">
+    <div class="col-md-12" style="font-size:22px;font-family:'Righteous', cursive;">Abstract images </div>
+    <br><br><br><br>
+  </div>
+  <div class="row mx-5" style="text-align:center" *ngIf="abstractImages.length>0">
+    <!--iterative div starts from here creates multiple panels or card depending on the objects declared in the array allBlogs-->
+    <div *ngFor="let images of abstractImages" class="col-12 col-md-4 mb-4 zoom" style="align-items: center;">
+
+      <!--using bootstrap card for image arrangement in the form of thumbnails
+    <div class="card-group mx-5">
+    <div class="card">
+  
+    <a href="" data-toggle="modal" data-target="#exampleModalCenter"><img src='{{images.url}}' class="card-img-top img-fluid" alt="spiritual images" ></a>
+    </div>-->
+
+      <!--creating thumbnails using just the img-thumnail class-->
+      <img src='{{images.url}}' class="img-thumbnail" [routerLink]="['/viewabstract',images.imgId]">
+
+
+
+      <br />
+
+    </div>
+
+  </div>
+  <!--end of iterative div-->
+
+
+
+</div>

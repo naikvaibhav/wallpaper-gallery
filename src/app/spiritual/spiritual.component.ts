@@ -12,15 +12,21 @@ import { GalleryService } from '../gallery.service';
 })
 export class SpiritualComponent implements OnInit, OnDestroy {
   public spiritualImages;
+  //public modalspiritualImages;
 
-  constructor(private _route: ActivatedRoute, private router: Router, public gallerySerice: GalleryService) {
+  constructor(private _route: ActivatedRoute, private router: Router, public galleryService: GalleryService) {
     console.log("Spiritual component constructor is called");
   }
-
   ngOnInit() {
+    //this.modalspiritualImages = this.galleryService.getImages();
+
+
     console.log("spiritual component oninit called");
-    this.spiritualImages = this.gallerySerice.getImages();
+    this.spiritualImages = this.galleryService.getImages();
     return this.spiritualImages;
+
+
+
   }
 
   ngOnDestroy() {

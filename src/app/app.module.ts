@@ -13,12 +13,21 @@ import { SpiritualComponent } from './spiritual/spiritual.component';
 import { GalleryService } from './gallery.service';
 import { ViewspiritualComponent } from './viewspiritual/viewspiritual.component';
 
+import { NatureComponent } from './nature/nature.component';
+import { ViewabstractComponent } from './viewabstract/viewabstract.component';
+import { AbstractComponent } from './abstract/abstract.component';
+import { ViewnatureComponent } from './viewnature/viewnature.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     SpiritualComponent,
-    ViewspiritualComponent
+    ViewspiritualComponent,
+    NatureComponent,
+    ViewabstractComponent,
+    AbstractComponent,
+    ViewnatureComponent
 
   ],
   imports: [
@@ -28,7 +37,11 @@ import { ViewspiritualComponent } from './viewspiritual/viewspiritual.component'
       { path: 'home', component: HomeComponent },
       { path: '', redirectTo: 'home', pathMatch: 'full' },
       { path: 'spiritual', component: SpiritualComponent },
-      { path: 'viewspiritual/:url', component: ViewspiritualComponent }
+      { path: 'abstract', component: AbstractComponent },
+      { path: 'nature', component: NatureComponent },
+      { path: 'viewspiritual/:imgId', component: ViewspiritualComponent },
+      { path: 'viewabstract/:imgId', component: ViewabstractComponent },
+      { path: 'viewnature/:imgId', component: ViewnatureComponent }
 
 
     ])

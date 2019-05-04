@@ -3,4 +3,18 @@ img {
     border-radius: 4px;  /* Rounded border */
     padding: 5px; /* Some padding */
     width: 150px; /* Set a small width */
+    cursor: pointer;
+  }
+
+  .zoom {
+    /*padding: 10px;*/
+    /*background-color: green;*/
+    transition: transform .2s; /* Animation */
+    /*width: 200px;*/
+    /*height: 200px;*/
+    margin: 0 auto;
+  }
+  
+  .zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   }

@@ -1,6 +1,17 @@
 .header{
-    background-color: blue;
+    /*background-color: #01579B;*/
     display: block;
     padding: 2%;
-    font-size: 28px;
+    font-size: 35px;
 }
+body {
+  /*background-color:#FFEB3B;*/
+  /*background: linear-gradient(to right, #2980b9, #6dd5fa, #ffffff);*/
+  /*background: linear-gradient(to right, #373b44, #4286f4);*/
+  background-color: #B2EBF2;
+}
+
+.navbar-custom {
+    background-color: #FFFF8D;
+}
+
